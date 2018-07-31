@@ -1,0 +1,25 @@
+uuid: cf1a0ef7-f19e-4a0b-92d0-b1907d291551
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_z
+    - node.type.component
+id: node.component.field_z
+field_name: field_z
+entity_type: node
+bundle: component
+label: z
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: !!float -10
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

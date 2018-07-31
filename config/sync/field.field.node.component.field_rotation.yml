@@ -1,0 +1,23 @@
+uuid: 53324dee-109e-4163-ab2b-128ec9e65321
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rotation
+    - node.type.component
+id: node.component.field_rotation
+field_name: field_rotation
+entity_type: node
+bundle: component
+label: 'Y Rotation'
+description: 'A value in degrees that you would like to rotate this component around your scene''s horizon.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

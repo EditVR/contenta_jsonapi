@@ -1,0 +1,35 @@
+uuid: 00a44721-644b-4ea4-b0d1-b390d0fc7fbc
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: 3
+is_admin: null
+permissions:
+  - 'bypass file access'
+  - 'create component content'
+  - 'create files'
+  - 'create scene content'
+  - 'delete any component content'
+  - 'delete any scene content'
+  - 'delete component revisions'
+  - 'delete experience revisions'
+  - 'delete own component content'
+  - 'delete own experience content'
+  - 'delete own scene content'
+  - 'delete scene revisions'
+  - 'edit any component content'
+  - 'edit any experience content'
+  - 'edit any scene content'
+  - 'edit own component content'
+  - 'edit own experience content'
+  - 'edit own scene content'
+  - 'revert component revisions'
+  - 'revert experience revisions'
+  - 'revert scene revisions'
+  - 'use text format restricted_html'
+  - 'view component revisions'
+  - 'view experience revisions'
+  - 'view files'
+  - 'view scene revisions'

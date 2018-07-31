@@ -1,0 +1,38 @@
+uuid: 07182649-da1a-4cf0-ba8d-2d2457fed3ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_navigation_button
+    - node.type.experience
+  module:
+    - image
+id: node.experience.field_navigation_button
+field_name: field_navigation_button
+entity_type: node
+bundle: experience
+label: 'Navigation Button Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 2fd8360f-004f-43f1-846f-0db52fa3bc50
+    alt: ''
+    title: ''
+    width: 256
+    height: 256
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

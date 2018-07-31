@@ -1,0 +1,25 @@
+uuid: 207565e6-0cc0-436f-832b-0312ad377651
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sky_rotation_x
+    - node.type.scene
+id: node.scene.field_sky_rotation_x
+field_name: field_sky_rotation_x
+entity_type: node
+bundle: scene
+label: 'Sky Rotation (x)'
+description: 'Pitch (rotation about the X-axis) of this scene''s sky.'
+required: false
+translatable: false
+default_value:
+  -
+    value: !!float 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

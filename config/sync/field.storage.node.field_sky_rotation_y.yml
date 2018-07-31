@@ -1,0 +1,18 @@
+uuid: 5123e9d0-f97f-4cd7-867d-699b2fc54d22
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_sky_rotation_y
+field_name: field_sky_rotation_y
+entity_type: node
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,15 @@
+uuid: a80ab434-c1f7-41e4-8a7c-3adb23e542b5
+langcode: en
+status: true
+dependencies: {  }
+name: sc
+label: 'Scene thumbnail'
+effects:
+  41eeb1f5-8791-47c3-aa63-9b0fcdb9aa39:
+    uuid: 41eeb1f5-8791-47c3-aa63-9b0fcdb9aa39
+    id: image_scale
+    weight: 1
+    data:
+      width: 321
+      height: null
+      upscale: false

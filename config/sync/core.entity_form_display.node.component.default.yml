@@ -1,0 +1,202 @@
+uuid: 5852ad5d-fdd0-4e57-b95c-83f3addbe74b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.component.field_body
+    - field.field.node.component.field_component_sound
+    - field.field.node.component.field_component_type
+    - field.field.node.component.field_image
+    - field.field.node.component.field_rotation
+    - field.field.node.component.field_rotation_x
+    - field.field.node.component.field_scene_link
+    - field.field.node.component.field_x
+    - field.field.node.component.field_y
+    - field.field.node.component.field_z
+    - image.style.thumbnail
+    - node.type.component
+  module:
+    - conditional_fields
+    - file
+    - image
+    - path
+id: node.component.default
+targetEntityType: node
+bundle: component
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_body:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        4bca4fa1-886f-42c0-b17a-b003266382ae:
+          dependee: field_component_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 3
+            value: ''
+            values: "textblock\r\npanelimage"
+            value_form: {  }
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: component
+    type: string_textarea
+    region: content
+  field_component_sound:
+    weight: 7
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_component_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_image:
+    weight: 8
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings:
+      conditional_fields:
+        9113cea8-f10a-4b50-a04e-98bb2abadb2f:
+          dependee: field_component_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 3
+            value: ''
+            values: "image\r\npanelimage\r\n"
+            value_form: {  }
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: component
+    type: image_image
+    region: content
+  field_rotation:
+    weight: 11
+    settings:
+      placeholder: '90'
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_rotation_x:
+    weight: 12
+    settings:
+      placeholder: '10'
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_scene_link:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        48184286-01f0-4f86-bc7b-8216fb1322fe:
+          dependee: field_component_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: "panelimage\r\nlink"
+            value_form: {  }
+            effect: show
+            effect_options: {  }
+            selector: ''
+            field_component_type:
+              -
+                value: panelimage
+          entity_type: node
+          bundle: component
+    type: entity_reference_autocomplete
+    region: content
+  field_x:
+    weight: 13
+    settings:
+      placeholder: '0'
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_y:
+    weight: 14
+    settings:
+      placeholder: '.5'
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_z:
+    weight: 15
+    settings:
+      placeholder: '-3'
+    third_party_settings: {  }
+    type: number
+    region: content
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

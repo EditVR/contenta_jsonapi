@@ -1,0 +1,30 @@
+uuid: 958f5b55-f36f-4fe3-aac6-598628071cb0
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_sound_button_icon
+field_name: field_sound_button_icon
+entity_type: node
+type: image
+settings:
+  uri_scheme: private
+  default_image:
+    uuid: fcd97035-13b3-49ce-9b5e-50f636855996
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

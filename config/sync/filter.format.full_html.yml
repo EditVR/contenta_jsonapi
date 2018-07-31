@@ -1,9 +1,11 @@
-uuid: be78f69b-37ef-4f23-80dd-2301526058ea
+uuid: c1d4e25c-e587-4534-a4d6-a24d86bcca2a
 langcode: en
 status: true
 dependencies:
   module:
     - editor
+_core:
+  default_config_hash: hewPmBgni9jlDK_IjLxUx1HsTbinK-hdl0lOwjbteIY
 name: 'Full HTML'
 format: full_html
 weight: 1

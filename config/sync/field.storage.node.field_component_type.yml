@@ -1,0 +1,39 @@
+uuid: 34ff4934-1f21-496d-b7b9-c13e354cdf4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_component_type
+field_name: field_component_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: panelimage
+      label: 'Panel Image'
+    -
+      value: textblock
+      label: 'Text Block'
+    -
+      value: image
+      label: Image
+    -
+      value: video
+      label: Video
+    -
+      value: sound
+      label: Sound
+    -
+      value: link
+      label: Link
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

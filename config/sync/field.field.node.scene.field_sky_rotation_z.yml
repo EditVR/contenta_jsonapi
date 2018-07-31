@@ -1,0 +1,25 @@
+uuid: 484710d0-b20b-4ee8-9196-79d7435bcb5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sky_rotation_z
+    - node.type.scene
+id: node.scene.field_sky_rotation_z
+field_name: field_sky_rotation_z
+entity_type: node
+bundle: scene
+label: 'Sky Rotation (z)'
+description: 'Roll (rotation about the Z-axis) of this scene''s sky.'
+required: false
+translatable: false
+default_value:
+  -
+    value: !!float 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

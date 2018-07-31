@@ -1,12 +1,14 @@
-name: 'Contenta JSON API'
-mail: admin@example.com
+uuid: 6d223ce4-a105-4969-ab02-5d8c75148c09
+name: 'Four Kitchens VR Editing Demo'
+mail: mike@fourkitchens.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /welcome
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
 default_langcode: en
-uuid: b7cc8588-03e5-49cb-87cf-a28b771415b8
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

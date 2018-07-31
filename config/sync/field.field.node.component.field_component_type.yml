@@ -1,0 +1,21 @@
+uuid: d43c6858-1cd7-4b20-8d2a-6f7f89ec44aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_component_type
+    - node.type.component
+  module:
+    - options
+id: node.component.field_component_type
+field_name: field_component_type
+entity_type: node
+bundle: component
+label: Type
+description: 'Select a type to reveal additional fields'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

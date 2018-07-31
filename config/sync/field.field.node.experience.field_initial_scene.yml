@@ -1,0 +1,28 @@
+uuid: c8c2930d-bb17-4277-b32e-3ba2cf426c75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_initial_scene
+    - node.type.experience
+    - node.type.scene
+id: node.experience.field_initial_scene
+field_name: field_initial_scene
+entity_type: node
+bundle: experience
+label: initial_scene
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      scene: scene
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

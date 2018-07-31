@@ -1,0 +1,143 @@
+uuid: fb998ff7-fcea-495f-a173-4baabf746179
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.experience.body
+    - field.field.node.experience.field_ambient
+    - field.field.node.experience.field_button_onclick_sound
+    - field.field.node.experience.field_button_onenter_sound
+    - field.field.node.experience.field_experience_path
+    - field.field.node.experience.field_experience_url
+    - field.field.node.experience.field_info_button
+    - field.field.node.experience.field_initial_scene
+    - field.field.node.experience.field_navigation_button
+    - field.field.node.experience.field_scenes
+    - field.field.node.experience.field_sound_button_icon
+    - node.type.experience
+  module:
+    - audiofield
+    - image
+    - link
+    - text
+    - user
+id: node.experience.default
+targetEntityType: node
+bundle: experience
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ambient:
+    weight: 4
+    label: above
+    settings:
+      audio_player: default_mp3_player
+      audio_player_jplayer_theme: none
+      audio_player_wordpress_combine_files: false
+      audio_player_wordpress_animation: true
+      audio_player_soundmanager_theme: default
+      audio_player_initial_volume: 8
+    third_party_settings: {  }
+    type: audiofield_audioplayer
+    region: content
+  field_button_onclick_sound:
+    weight: 6
+    label: above
+    settings:
+      audio_player: default_mp3_player
+      audio_player_jplayer_theme: none
+      audio_player_wordpress_combine_files: false
+      audio_player_wordpress_animation: true
+      audio_player_soundmanager_theme: default
+      audio_player_initial_volume: 8
+    third_party_settings: {  }
+    type: audiofield_audioplayer
+    region: content
+  field_button_onenter_sound:
+    weight: 5
+    label: above
+    settings:
+      audio_player: default_mp3_player
+      audio_player_jplayer_theme: none
+      audio_player_wordpress_combine_files: false
+      audio_player_wordpress_animation: true
+      audio_player_soundmanager_theme: default
+      audio_player_initial_volume: 8
+    third_party_settings: {  }
+    type: audiofield_audioplayer
+    region: content
+  field_experience_path:
+    weight: 11
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_experience_url:
+    weight: 10
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_info_button:
+    weight: 7
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_initial_scene:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_navigation_button:
+    weight: 8
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_scenes:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_sound_button_icon:
+    weight: 9
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

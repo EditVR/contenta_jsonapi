@@ -1,17 +1,20 @@
-uuid: 85be1d9b-3787-4cb1-93cd-d243921acd0a
+uuid: e15cc792-9f0c-4efc-bd35-df4bd12a7165
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
 label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
+  - 'access comments'
   - 'access content'
   - 'access jsonapi resource list'
-  - 'access openapi api docs'
-  - 'access toolbar'
-  - 'execute graphql requests'
-  - 'issue subrequests'
-  - 'view media'
-  - 'use jsonrpc services'
+  - 'access site-wide contact form'
+  - 'bypass file access'
+  - 'create files'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view files'

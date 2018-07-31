@@ -1,0 +1,25 @@
+uuid: b4072ad9-2441-4c34-a01c-2a5b70aac7c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_y
+    - node.type.component
+id: node.component.field_y
+field_name: field_y
+entity_type: node
+bundle: component
+label: 'y'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: !!float 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

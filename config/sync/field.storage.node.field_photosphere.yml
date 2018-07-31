@@ -1,0 +1,30 @@
+uuid: f0e30621-4bc1-4078-8a47-2a37a641a4c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_photosphere
+field_name: field_photosphere
+entity_type: node
+type: image
+settings:
+  uri_scheme: private
+  default_image:
+    uuid: cd5d3c56-790e-411f-ab22-6828c6c0bc88
+    alt: ''
+    title: ''
+    width: 4096
+    height: 2048
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: 2036cd76-b490-48bc-bf05-626d68accf43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sky_rotation_y
+    - node.type.scene
+id: node.scene.field_sky_rotation_y
+field_name: field_sky_rotation_y
+entity_type: node
+bundle: scene
+label: 'Sky Rotation (y)'
+description: 'Yaw (rotation about the Y-axis) of this scene''s sky.'
+required: false
+translatable: false
+default_value:
+  -
+    value: !!float 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

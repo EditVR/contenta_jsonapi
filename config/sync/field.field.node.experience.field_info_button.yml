@@ -1,0 +1,38 @@
+uuid: bae03ed4-9460-4b4e-942c-c7d3c2bfe59f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_info_button
+    - node.type.experience
+  module:
+    - image
+id: node.experience.field_info_button
+field_name: field_info_button
+entity_type: node
+bundle: experience
+label: 'Info Button Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png jpg jpeg gif'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ecf4649a-5745-4559-afba-e484d34bb155
+    alt: ''
+    title: ''
+    width: 256
+    height: 256
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

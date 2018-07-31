@@ -1,0 +1,23 @@
+uuid: d522ef28-2864-4df2-914d-3017acef57c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_experience_url
+    - node.type.experience
+  module:
+    - link
+id: node.experience.field_experience_url
+field_name: field_experience_url
+entity_type: node
+bundle: experience
+label: 'experience URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

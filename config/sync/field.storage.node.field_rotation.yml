@@ -1,0 +1,18 @@
+uuid: 89f60945-aad4-411b-ad1c-4e15c11cbfcf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_rotation
+field_name: field_rotation
+entity_type: node
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

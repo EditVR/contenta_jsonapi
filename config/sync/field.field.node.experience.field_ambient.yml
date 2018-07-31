@@ -1,0 +1,27 @@
+uuid: a58f3d29-5646-470d-bf51-09fea58a0921
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ambient
+    - node.type.experience
+  module:
+    - file
+id: node.experience.field_ambient
+field_name: field_ambient
+entity_type: node
+bundle: experience
+label: ambient
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: wav
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

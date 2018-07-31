@@ -1,0 +1,28 @@
+uuid: cefd66cc-f00d-456a-92c4-ea59e5442def
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.component
+    - node.type.scene
+id: node.scene.field_components
+field_name: field_components
+entity_type: node
+bundle: scene
+label: Components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      component: component
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

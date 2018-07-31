@@ -1,0 +1,18 @@
+uuid: c43a293f-9810-4098-af15-7d159ee24802
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Component
+type: component
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
