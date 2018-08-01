@@ -7,8 +7,6 @@ dependencies:
     - file_entity.type.audio
   module:
     - text
-_core:
-  default_config_hash: 3JiAy0mwynmWPj9NTujj1zJk81Eq8lnG5DAOGrgM5u0
 id: file.audio.thumbnail
 targetEntityType: file
 bundle: audio

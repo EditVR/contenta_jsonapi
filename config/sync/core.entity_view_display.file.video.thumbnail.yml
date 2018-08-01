@@ -7,8 +7,6 @@ dependencies:
     - file_entity.type.video
   module:
     - text
-_core:
-  default_config_hash: _Q1l94kLWLkX17ofAFFAQL9emt-VMNP8Sk3_KdgkvdU
 id: file.video.thumbnail
 targetEntityType: file
 bundle: video

@@ -2,8 +2,6 @@ uuid: 75f190a9-d091-4170-9c5c-6c852b0ee5a5
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: iJ1FZojKBfhvhqubLJM6ar3kHpcUsU_EEsAUttL4NeA
 id: video
 label: Video
 description: 'A <em>Video</em> file is a moving visual recording.'

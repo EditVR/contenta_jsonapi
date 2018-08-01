@@ -7,8 +7,6 @@ dependencies:
     - file_entity
     - system
     - user
-_core:
-  default_config_hash: H7kbXDAkOwaJHC-czbN3OdPc8jbYC3s60VW-Igr_WqQ
 id: file_entity_files
 label: 'File Entity Files'
 module: file_entity

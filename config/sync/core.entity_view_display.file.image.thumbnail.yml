@@ -11,8 +11,6 @@ dependencies:
   module:
     - file_entity
     - text
-_core:
-  default_config_hash: 8trPid18Dj2TjH8c4n0Eb1KrYcJR0xYIyNlgYlGk2XI
 id: file.image.thumbnail
 targetEntityType: file
 bundle: image

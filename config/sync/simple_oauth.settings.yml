@@ -1,6 +1,4 @@
 access_token_expiration: 30000
 refresh_token_expiration: 1209600
-_core:
-  default_config_hash: YJrGmZVEcxxUt1ffTwS_DybfKrbnRkwF1GXzPj-j7aE
 public_key: sites/default/files/private/public.key
 private_key: sites/default/files/private/private.key

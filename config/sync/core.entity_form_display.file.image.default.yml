@@ -6,8 +6,6 @@ dependencies:
     - field.field.file.image.field_image_alt_text
     - field.field.file.image.field_image_title_text
     - file_entity.type.image
-_core:
-  default_config_hash: HYzof_QiEoo7449yRhD_uJoLXMEAmSafqexxGS9OmjQ
 id: file.image.default
 targetEntityType: file
 bundle: image
