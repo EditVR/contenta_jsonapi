@@ -11,6 +11,10 @@
     {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/editvr/editvr_experience"
     }
   ],
   "extra": {
@@ -75,7 +79,8 @@
     "drupal/subrequests": "^2.0@rc",
     "drupal/video_embed_field": "^2.0",
     "drupal/openapi_ui": "^1.0@RC",
-    "drupal/openapi_ui_redoc": "^1.0@RC"
+    "drupal/openapi_ui_redoc": "^1.0@RC",
+    "editvr/editvr_experience": "master"
   },
   "config": {
     "process-timeout": 0
