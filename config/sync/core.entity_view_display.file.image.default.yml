@@ -69,4 +69,6 @@ content:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true
+  url: true

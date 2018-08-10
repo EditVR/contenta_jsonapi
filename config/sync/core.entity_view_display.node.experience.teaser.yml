@@ -25,4 +25,23 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_ambient: true
+  field_button_onclick_sound: true
+  field_button_onenter_sound: true
+  field_experience_path: true
+  field_experience_url: true
+  field_info_button: true
+  field_initial_scene: true
+  field_navigation_button: true
+  field_scenes: true
+  field_sound_button_icon: true
+  langcode: true

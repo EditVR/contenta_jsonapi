@@ -25,4 +25,20 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_components: true
+  field_photosphere: true
+  field_sky_rotation_x: true
+  field_sky_rotation_y: true
+  field_sky_rotation_z: true
+  field_slug: true
+  field_videosphere: true
+  langcode: true

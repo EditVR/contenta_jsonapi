@@ -21,10 +21,23 @@ content:
   links:
     weight: 100
     region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   field_body: true
+  field_component_sound: true
+  field_component_type: true
   field_image: true
   field_rotation: true
+  field_rotation_x: true
+  field_scene_link: true
   field_x: true
   field_y: true
   field_z: true
+  langcode: true
