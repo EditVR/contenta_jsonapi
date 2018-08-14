@@ -1,0 +1,43 @@
+id: editvr_sample_content__experiences
+status: true
+source:
+  plugin: editvr_sample_content__csv
+  path: default_content/experiences.csv
+  header_row_count: 1
+  keys:
+  - title
+process:
+  title: title
+  field_experience_path: field_experience_path
+  field_experience_url: field_experience_url
+  field_scenes:
+    -
+      plugin: explode
+      delimiter: ','
+      source: field_scenes
+    -
+      plugin: migration_lookup
+      migration: editvr_sample_content__scenes
+  field_info_button:
+    plugin: migration_lookup
+    migration: editvr_sample_content__files
+    source: field_info_button
+  field_navigation_button:
+    plugin: migration_lookup
+    migration: editvr_sample_content__files
+    source: field_navigation_button
+  field_sound_button_icon:
+    plugin: migration_lookup
+    migration: editvr_sample_content__files
+    source: field_sound_button_icon
+  field_button_onclick_sound:
+    plugin: migration_lookup
+    migration: editvr_sample_content__files
+    source: field_button_onclick_sound
+  field_button_onenter_sound:
+    plugin: migration_lookup
+    migration: editvr_sample_content__files
+    source: field_button_onenter_sound
+destination:
+  plugin: 'entity:node'
+  default_bundle: experience

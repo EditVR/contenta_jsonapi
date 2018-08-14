@@ -1,0 +1,32 @@
+id: editvr_sample_content__components
+status: true
+source:
+  plugin: editvr_sample_content__csv
+  path: default_content/components.csv
+  header_row_count: 1
+  keys:
+  - title
+process:
+  title: title
+  field_component_type: field_component_type
+  field_image:
+    plugin: migration_lookup
+    migration: editvr_sample_content__files
+    source: field_image
+  field_component_sound:
+    plugin: migration_lookup
+    migration: editvr_sample_content__files
+    source: field_component_sound
+  field_scene_link:
+    plugin: migration_lookup
+    migration: editvr_sample_content__scenes
+    source: field_scene_link
+  field_rotation_x: field_rotation_x
+  field_rotation: field_rotation
+  field_x: field_x
+  field_y: field_y
+  field_z: field_z
+  field_body: field_body
+destination:
+  plugin: 'entity:node'
+  default_bundle: component

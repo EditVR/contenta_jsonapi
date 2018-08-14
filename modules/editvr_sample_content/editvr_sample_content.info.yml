@@ -1,0 +1,10 @@
+name: EditVR Example Content
+description: Generate example content for the EditVR application.
+type: module
+core: 8.x
+package: EditVR
+dependencies:
+- field
+- file
+- node
+- migrate
