@@ -6,5 +6,8 @@ package: EditVR
 dependencies:
 - field
 - file
+- link
 - node
 - migrate
+- path
+- text
