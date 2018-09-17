@@ -1,0 +1,4 @@
+services:
+  editvr_sample_content.migration_runner:
+    class: Drupal\editvr_sample_content\MigrationRunner
+    arguments: ['@plugin.manager.migration']

@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Module installation file.
+ */
+
+/**
+ * Implements hook_modules_installed().
+ */
+function editvr_sample_content_modules_installed($modules) {
+  $migrations = _editvr_sample_content_migration_names();
+  \Drupal::service('editvr_sample_content.migration_runner')->run($migrations);
+  \Drupal::messenger()->addMessage(t('The migration for demo content was successful.'));
+}
+
+/**
+ * Implements hook_modules_uninstalled().
+ */
+function editvr_sample_content_modules_uninstalled($modules) {
+  $migrations = _editvr_sample_content_migration_names();
+  \Drupal::service('editvr_sample_content.migration_runner')->remove($migrations);
+  \Drupal::messenger()->addMessage(t('The rollback of the demo content was successful.'));
+}
+
+/**
+ * List the machine-names of migrations included within this module.
+ *
+ * @return array
+ */
+function _editvr_sample_content_migration_names() {
+  return [
+    'editvr_sample_content__files',
+    'editvr_sample_content__scenes',
+    'editvr_sample_content__components',
+    'editvr_sample_content__experiences',
+  ];
+}

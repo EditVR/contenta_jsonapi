@@ -1,0 +1,2 @@
+title,field_experience_path,field_experience_url,field_scenes,field_info_button,field_navigation_button,field_sound_button_icon,field_button_onclick_sound,field_button_onenter_sound
+"Drupalcon Demo",drupalcon,https://fourkitchens.github.io/webvr-studio/,"Mike's Office,Mike's Workshop",button-icon-info.jpg,button-icon-navigation.jpg,button-icon-sound.jpg,audio-click.wav,audio-enter.wav
